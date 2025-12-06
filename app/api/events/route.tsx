@@ -75,7 +75,8 @@ export async function POST(request: NextRequest) {
     });
 
     //Add image URL to event data
-    event.image = uploadResult.secure_url;
+    //event.image = uploadResult.secure_url;
+    event.image = (uploadResult as { secure_url: string }).secure_url;
 
     //Create event in the database
     const createdEvent = await Event.create(event);

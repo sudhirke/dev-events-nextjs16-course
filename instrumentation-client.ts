@@ -1,3 +1,4 @@
+/*
 import posthog from "posthog-js";
 
 posthog.init(process.env.NEXT_PUBLIC_POSTHOG_KEY!, {
@@ -7,3 +8,4 @@ posthog.init(process.env.NEXT_PUBLIC_POSTHOG_KEY!, {
   capture_exceptions: true, // Enables capturing exceptions via Error Tracking
   debug: process.env.NODE_ENV === "development",
 });
+*/
